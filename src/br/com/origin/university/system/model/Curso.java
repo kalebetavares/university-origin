@@ -20,7 +20,7 @@ public class Curso {
         return Collections.unmodifiableSet(this.gradeCurricular);
     }
 
-    public void adicionaCadeira(Cadeira cadeira) {
+    public void adiciona(Cadeira cadeira) {
         this.gradeCurricular.add(cadeira);
     }
 
