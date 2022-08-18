@@ -24,9 +24,18 @@ public class Curso {
         this.gradeCurricular.add(cadeira);
     }
 
+
+
     @Override
     public String toString() {
         return "Curso: " + this.nome +
                 ", Grade Curricular:" + this.gradeCurricular;
+    }
+
+    public void filtra(Integer credito) {
+        this.gradeCurricular.stream()
+                .filter(cadeira -> cadeira.getCreditos().equals(credito))
+                .map(Cadeira::getNome)
+                .forEach(System.out::println);
     }
 }

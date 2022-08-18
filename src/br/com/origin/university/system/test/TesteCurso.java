@@ -9,5 +9,7 @@ public class TesteCurso {
 
         System.out.println(curso.getNome());
         System.out.println(curso1.getNome());
+
+
     }
 }
