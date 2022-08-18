@@ -4,10 +4,10 @@ import br.com.origin.university.system.model.Curso;
 
 public class TesteCurso {
     public static void main(String[] args) {
-        Curso curso = new Curso("Nutrição", "Lucas Careca", 88);
-        Curso curso1 = new Curso("Ciência da Computação", "Claudio Ferreira", 66);
+        Curso curso = new Curso("Nutrição");
+        Curso curso1 = new Curso("Ciência da Computação");
 
-        System.out.println(curso);
-        System.out.println(curso1);
+        System.out.println(curso.getNome());
+        System.out.println(curso1.getNome());
     }
 }

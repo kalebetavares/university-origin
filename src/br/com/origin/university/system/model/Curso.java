@@ -1,36 +1,32 @@
 package br.com.origin.university.system.model;
 
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Curso {
     private String nome;
-    private String professor;
-    private Integer horasAulas;
+    private Set<Cadeira> gradeCurricular = new HashSet<>();
 
-
-    public Curso(String nome, String professor, Integer horasAulas) {
+    public Curso(String nome) {
         this.nome = nome;
-        this.professor = professor;
-        this.horasAulas = horasAulas;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
-    public String getProfessor() {
-        return professor;
+    public Set<Cadeira> getGradeCurricular() {
+        return Collections.unmodifiableSet(this.gradeCurricular);
     }
 
-    public Integer getHorasAulas() {
-        return horasAulas;
+    public void adicionaCadeira(Cadeira cadeira) {
+        this.gradeCurricular.add(cadeira);
     }
 
     @Override
     public String toString() {
-        return "Curso{" + this.nome +
-                ", Professor: '" + this.professor +
-                ", Horas: " + this.horasAulas +
-                '}';
+        return "Curso: " + this.nome +
+                ", Grade Curricular:" + this.gradeCurricular;
     }
 }
