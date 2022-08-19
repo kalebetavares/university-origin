@@ -7,7 +7,6 @@ public class Aluno {
     private String cpf;
     private Integer matricula = ThreadLocalRandom.current().nextInt(1000, 10000);
 
-
     public Aluno(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;

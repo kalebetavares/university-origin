@@ -35,7 +35,7 @@ public class Curso {
         return Collections.unmodifiableSet(alunos);
     }
 
-    public void matricula(Aluno aluno) {
+    public void matricular(Aluno aluno) {
         this.alunos.add(aluno);
         this.alunosMatriculados.put(aluno.getMatricula(), aluno);
     }

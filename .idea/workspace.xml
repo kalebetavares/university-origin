@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c7d0d5-8d5c-4598-82f3-80cb2e403260" name="Changes" comment="Criação do método filtra">
-      <change afterPath="$PROJECT_DIR$/src/br/com/origin/university/system/model/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/origin/university/system/test/TesteAluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/origin/university/system/test/TesteMatricula.java" afterDir="false" />
+    <list default="true" id="85c7d0d5-8d5c-4598-82f3-80cb2e403260" name="Changes" comment="Criação dos métodos matricula e buscarAlunoMatriculado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/origin/university/system/model/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/origin/university/system/model/Curso.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +132,7 @@
       <workItem from="1660841455349" duration="3389000" />
       <workItem from="1660846751272" duration="1752000" />
       <workItem from="1660909978672" duration="4829000" />
-      <workItem from="1660915046790" duration="1195000" />
+      <workItem from="1660915046790" duration="1926000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1660836274990</created>
@@ -166,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660849322288</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criação da classe Aluno">
+      <created>1660916567066</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660916567066</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Criação dos métodos matricula e buscarAlunoMatriculado">
+      <created>1660916673584</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660916673584</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +198,8 @@
     <MESSAGE value="Criação de Cadeira e modificações no Curso" />
     <MESSAGE value="Modificação no método adiciona" />
     <MESSAGE value="Criação do método filtra" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação do método filtra" />
+    <MESSAGE value="Criação da classe Aluno" />
+    <MESSAGE value="Criação dos métodos matricula e buscarAlunoMatriculado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação dos métodos matricula e buscarAlunoMatriculado" />
   </component>
 </project>
