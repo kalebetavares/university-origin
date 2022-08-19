@@ -1,12 +1,12 @@
 package br.com.origin.university.system.model;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Curso {
     private String nome;
     private Set<Cadeira> gradeCurricular = new HashSet<>();
+    private Set<Aluno> alunos = new HashSet<>();
+    private Map<Integer,Aluno> alunosMatriculados = new HashMap<>();
 
     public Curso(String nome) {
         this.nome = nome;
@@ -25,17 +25,29 @@ public class Curso {
     }
 
 
-
-    @Override
-    public String toString() {
-        return "Curso: " + this.nome +
-                ", Grade Curricular:" + this.gradeCurricular;
-    }
-
     public void filtra(Integer credito) {
         this.gradeCurricular.stream()
                 .filter(cadeira -> cadeira.getCreditos().equals(credito))
                 .map(Cadeira::getNome)
                 .forEach(System.out::println);
+    }
+    public Set<Aluno> getAlunos() {
+        return Collections.unmodifiableSet(alunos);
+    }
+
+    public void matricula(Aluno aluno) {
+        this.alunos.add(aluno);
+        this.alunosMatriculados.put(aluno.getMatricula(), aluno);
+    }
+
+    public Aluno buscarAlunoMatriculado(Integer numero) {
+        if(!this.alunosMatriculados.containsKey(numero)) throw new NoSuchElementException();
+        return alunosMatriculados.get(numero);
+    }
+
+    @Override
+    public String toString() {
+        return "Curso: " + this.nome +
+                ", Grade Curricular:" + this.gradeCurricular;
     }
 }
