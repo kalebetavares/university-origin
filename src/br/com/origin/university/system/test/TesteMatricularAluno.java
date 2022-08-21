@@ -9,7 +9,7 @@ public class TesteMatricularAluno {
 
         Aluno aluno1 = new Aluno("José da Silva", "951.654.752-85");
         Aluno aluno2 = new Aluno("Claudia Pereira", "452-741-247-30");
-        Aluno aluno3 = new Aluno("José da Silva", "357.158.624-03");
+        Aluno aluno3 = new Aluno("Paulo da Silva", "357.158.624-03");
 
         curso1.matricular(aluno1);
         curso1.matricular(aluno2);
