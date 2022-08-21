@@ -50,4 +50,8 @@ public class Curso {
         return "Curso: " + this.nome +
                 ", Grade Curricular:" + this.gradeCurricular;
     }
+
+    public boolean verificaCadeira(Cadeira cadeira) {
+        return this.gradeCurricular.contains(cadeira);
+    }
 }
