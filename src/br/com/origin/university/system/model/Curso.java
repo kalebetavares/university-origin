@@ -54,4 +54,8 @@ public class Curso {
     public boolean verificaCadeira(Cadeira cadeira) {
         return this.gradeCurricular.contains(cadeira);
     }
+
+    public void remove(Cadeira cadeira) {
+        this.gradeCurricular.remove(cadeira);
+    }
 }
