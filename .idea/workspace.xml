@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c7d0d5-8d5c-4598-82f3-80cb2e403260" name="Changes" comment="Criação dos métodos matricula e buscarAlunoMatriculado">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="85c7d0d5-8d5c-4598-82f3-80cb2e403260" name="Changes" comment="fix-&quot;Verifica se contém a cadeira&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,42 +35,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Kalebe Tavares/Desktop/Workspace/Alura/alura-gerenciador-de-cursos",
+    "last_opened_file_path": "C:/Users/Kalebe Tavares/Desktop/Workspace/Alura/university-origin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TesteMatricula">
-    <configuration name="TesteAdicionaCadeira" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.origin.university.system.test.TesteAdicionaCadeira" />
-      <module name="university-origin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.origin.university.system.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TesteRemoveCadeira">
     <configuration name="TesteAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.origin.university.system.test.TesteAluno" />
-      <module name="university-origin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.origin.university.system.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesteCadeira" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.origin.university.system.test.TesteCadeira" />
       <module name="university-origin" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +69,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteMatricula" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.origin.university.system.test.TesteMatricula" />
+    <configuration name="TesteMatricularAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.origin.university.system.test.TesteMatricularAluno" />
+      <module name="university-origin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.origin.university.system.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteRemoveCadeira" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.origin.university.system.test.TesteRemoveCadeira" />
+      <module name="university-origin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.origin.university.system.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteVerificaCadeira" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.origin.university.system.test.TesteVerificaCadeira" />
       <module name="university-origin" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TesteMatricula" />
+        <item itemvalue="Application.TesteRemoveCadeira" />
+        <item itemvalue="Application.TesteVerificaCadeira" />
+        <item itemvalue="Application.TesteMatricularAluno" />
         <item itemvalue="Application.TesteAluno" />
         <item itemvalue="Application.TesteFiltraPorCreditos" />
-        <item itemvalue="Application.TesteAdicionaCadeira" />
-        <item itemvalue="Application.TesteCadeira" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +130,8 @@
       <workItem from="1660841455349" duration="3389000" />
       <workItem from="1660846751272" duration="1752000" />
       <workItem from="1660909978672" duration="4829000" />
-      <workItem from="1660915046790" duration="1926000" />
+      <workItem from="1660915046790" duration="3199000" />
+      <workItem from="1661122163008" duration="1714000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1660836274990</created>
@@ -176,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660916673584</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modificação dos métodos matricular e buscarAlunoMatriculado">
+      <created>1660917698942</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660917698942</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix-&quot;Verifica se contém a cadeira&quot;">
+      <created>1661123849499</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661123849499</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +213,8 @@
     <MESSAGE value="Criação do método filtra" />
     <MESSAGE value="Criação da classe Aluno" />
     <MESSAGE value="Criação dos métodos matricula e buscarAlunoMatriculado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação dos métodos matricula e buscarAlunoMatriculado" />
+    <MESSAGE value="Modificação dos métodos matricular e buscarAlunoMatriculado" />
+    <MESSAGE value="fix-&quot;Verifica se contém a cadeira&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix-&quot;Verifica se contém a cadeira&quot;" />
   </component>
 </project>
