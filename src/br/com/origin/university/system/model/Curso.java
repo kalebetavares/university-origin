@@ -58,4 +58,8 @@ public class Curso {
     public void remove(Cadeira cadeira) {
         this.gradeCurricular.remove(cadeira);
     }
+
+    public long totalDeAlunos() {
+        return this.alunos.stream().count();
+    }
 }
